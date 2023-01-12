@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +12,21 @@
 </head>
 <body>
    <div class="container">
-
+<!-- IMAGE -->
         <div class="imageContainer">
             <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="background-image">
-            <div class="logo"></div>
+            <div class="logo">
+                <img src="./odin-lined.png" alt="odin-logo">
+                <p class="logoText">ODIN</p>
+            </div>
+
         </div>
 
+
+<!-- TEXT / FORM -->
         <div class="textContainer">
+
+
            <div class="text">
             <p class="textStyle">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
             Sign up <span class="italic">now</span> to get started.
@@ -24,28 +35,41 @@
            </div>
            
            <form action="#">
+            <p class="textStyle">Let's do this!</p>
             <fieldset>
-                <p class="textStyle">Let's do this!</p>
+                
 
-                <div>                  
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                <div class="inputDuo">  
+                    <div class="input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>                
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
                 </div>
 
-                <div>                  
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
+                <div class="inputDuo"> 
+                    <div class="input">       
+                        <label for="email">EMAIL</label>
+                        <input required type="email" name="email" id="email">
+                    </div>                 
+                    <div class="input">       
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
                 </div>
 
-                <div>                  
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                    <label for="password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                <div class="inputDuo">     
+                    <div class="input">       
+                        <label for="password">PASSWORD</label>
+                        <input required type="password" name="password" id="password">
+                    </div>             
+                    <div class="input">       
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input required type="password" name="confirm-password" id="confirm-password">
+                    </div>
                 </div>
 
 
@@ -56,6 +80,8 @@
             </button>
            </form>
 
+            <p class="lastText">Already have an account? <a href="#">Log in</a></p>
+            
         </div>
 
 
